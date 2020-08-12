@@ -46,8 +46,11 @@ export class DictatorsFormComponent implements OnInit {
     {
       alert("The form is invalid!");
     }
+  }
 
-    
+  public removeDictator(index : number){
+    this._dictators.splice(index, 1); 
+    //this._dictators = this._dictators.filter(obj => obj.FirstName !== firstName);
   }
 
 }
